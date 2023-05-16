@@ -9,7 +9,9 @@ function Greeting(){
         firstname: "Daniel",
         surname: "Vargas"
     }
-    return <h1> {JSON.stringify(user)}</h1>
+    return <div>
+        <h1>Hello, {user.firstname} {user.surname}</h1>
+    </div>
 }
 
 
