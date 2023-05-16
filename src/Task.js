@@ -1,9 +1,9 @@
 import "./tasks.css"
-export function TaskCard(){
+export function TaskCard({ready}){
     return (
         <div className="card">
             <h1>Mi primer tarea</h1>
-            <p>Tarea realizada</p>
+            <span style={ready ? {background: "green"}: {background: "red"}}></span>
         </div>
     );
 }
