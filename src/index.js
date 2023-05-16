@@ -7,4 +7,9 @@ const root= ReactDOM.createRoot(rootElement)
 
 
 
-root.render(Greeting())
+root.render(<div>
+    <Greeting name="Sagar" />
+    <Greeting name="Cosa" />
+    <Greeting name="Otro" />
+    <Greeting name="Nose" />
+</div>)
