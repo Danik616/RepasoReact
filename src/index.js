@@ -5,9 +5,6 @@ import { Button } from "./Button"
 const rootElement=document.getElementById("root")
 const root= ReactDOM.createRoot(rootElement)
 
-
-
-
 root.render(<div>
-    <Button text="click me"/>
+    <Button text="click me" name="Daniel"/>
 </div>)
