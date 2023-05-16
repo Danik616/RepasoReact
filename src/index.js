@@ -8,5 +8,9 @@ const root= ReactDOM.createRoot(rootElement)
 root.render(<div>
     <TaskCard ready={false}/>
     <Button text="Saludar"/>
+
+    <input onChange={function(e){
+        console.log(e.target.value)
+    }}></input>
 </div>)
 
