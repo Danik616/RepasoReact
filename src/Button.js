@@ -2,7 +2,8 @@
 
 import PropTypes from "prop-types"
 
-export function Button ({text, name}){
+//El valor por defecto se puede declarar como se habia hecho anteriormente con defalutProps, pero se puede hacer así
+export function Button ({text, name= "Juan"}){
     return <button>
         {text} -{name}
     </button>
@@ -13,6 +14,4 @@ Button.propTypes= {
     text: PropTypes.string.isRequired
 }
 
-Button.defaultProps= {
-    name: "Juan"
-}
+
