@@ -7,6 +7,6 @@ const root= ReactDOM.createRoot(rootElement)
 
 root.render(<div>
     <TaskCard ready={false}/>
-    <Button/>
+    <Button text="Saludar"/>
 </div>)
 
