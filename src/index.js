@@ -5,8 +5,11 @@ const rootElement=document.getElementById("root")
 const root= ReactDOM.createRoot(rootElement)
 
 function Greeting(){
-    const name="Ejemplo"
-    return <h1> {name}</h1>
+    const user={
+        firstname: "Daniel",
+        surname: "Vargas"
+    }
+    return <h1> {JSON.stringify(user)}</h1>
 }
 
 
