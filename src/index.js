@@ -12,7 +12,7 @@ function Counter(){
     // En el dado caso de que nosotros necesitemos que se ejecute una sola vez el useEffect, nosotros de segundo valor tenemos que agregar un arreglo vacio, dentro de este arreglo este se basara en un objeto para poder ejecutarse cada vez que este objeto cambie
     useEffect(()=>{
         console.log("render")
-    }, [ ])
+    }, [ counter ])
     return (
         <>
         <input onChange={e => setMensaje(e.target.value)}/>
