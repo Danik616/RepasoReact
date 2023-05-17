@@ -14,7 +14,7 @@ function Counter(){
         <input onChange={e => setMensaje(e.target.value)}/>
         <button onClick={() => {
             alert("el mensaje es: "+mensaje)
-        }}></button>
+        }}>Enviar</button>
         </>
     );
 }
