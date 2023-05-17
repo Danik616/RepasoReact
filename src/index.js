@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom/client";
 import { TaskCard } from "./Task";
 import { Button } from "./Button";
@@ -7,8 +7,12 @@ const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
 function Counter(){
-    const [mensaje, setMensaje] = React.useState('');
-    
+    const [mensaje, setMensaje] = useState('');
+    // Este funciona de la siguiente forma, cada vez que haya un cambio en el Dom este hara algo, en este caso imprimir por consola render
+    // En el dado caso de que nosotros necesitemos que se ejecute una sola vez el useEffect, nosotros de segundo valor tenemos que agregar un arreglo vacio, dentro de este arreglo este se basara en un objeto para poder ejecutarse cada vez que este objeto cambie
+    useEffect(()=>{
+        console.log("render")
+    }, [ ])
     return (
         <>
         <input onChange={e => setMensaje(e.target.value)}/>
