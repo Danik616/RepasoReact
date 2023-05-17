@@ -19,5 +19,5 @@ function Counter(){
 }
 
 root.render(
-  
+  <Counter/>
 );
