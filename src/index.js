@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(rootElement);
 
 function Counter(){
     const [mensaje, setMensaje] = useState('');
-    // Este funciona de la siguiente forma, cada vez que haya un cambio en el Dom este hara algo, en este caso imprimir por consola render
+    const [counter, setCounter] = useState('');
     // En el dado caso de que nosotros necesitemos que se ejecute una sola vez el useEffect, nosotros de segundo valor tenemos que agregar un arreglo vacio, dentro de este arreglo este se basara en un objeto para poder ejecutarse cada vez que este objeto cambie
     useEffect(()=>{
         console.log("render")
@@ -19,7 +19,15 @@ function Counter(){
         <button onClick={() => {
             alert("el mensaje es: "+mensaje)
         }}>Enviar</button>
+
+        <hr/>
+        <h1>Contador: {counter}</h1>
+        <button onClick={() => {
+            setCounter(counter + 1)
+        }}>+</button>
         </>
+
+
     );
 }
 
